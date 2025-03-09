@@ -2,9 +2,11 @@
 title Mobile Data Toggle Script
 color 0A
 
+set DEVICE_ID=87ff4c0f
+
 :check_device
 echo Checking for connected Android device...
-"C:\Program Files\Microvirt\MEmu\adb.exe" devices
+"E:\Microvirt\MEmu\adb.exe" devices
 if errorlevel 1 (
     echo No device found! Please connect your Android device via USB...
     timeout /t 5
@@ -21,7 +23,7 @@ echo.
 pause > nul
 
 echo Turning mobile data OFF...
-"C:\Program Files\Microvirt\MEmu\adb.exe" shell svc data disable
+"E:\Microvirt\MEmu\adb.exe" -s %DEVICE_ID% shell svc data disable
 if errorlevel 1 (
     echo Failed to disable mobile data!
     goto error
@@ -31,7 +33,7 @@ echo Waiting for 2 seconds...
 timeout /t 2 /nobreak > nul
 
 echo Turning mobile data ON...
-"C:\Program Files\Microvirt\MEmu\adb.exe" shell svc data enable
+"E:\Microvirt\MEmu\adb.exe" -s %DEVICE_ID% shell svc data enable
 if errorlevel 1 (
     echo Failed to enable mobile data!
     goto error
