@@ -12,5 +12,9 @@ timeout /t 2
 adb shell settings put global airplane_mode_on 0
 adb shell am broadcast -a android.intent.action.AIRPLANE_MODE
 timeout /t 2
+
+:: Start capturing WhatsApp logs
+start cmd /k "E:\Microvirt\MEmu\adb.exe logcat | findstr "WhatsApp""
+
 cd /d "C:\Users\Administrator\Desktop\Firda Automation for whatsapp login"
 python whatsapp_spoofer.py 0
