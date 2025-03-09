@@ -1,0 +1,36 @@
+{
+    "device_profiles": [
+        {
+            "model": "SM-S918B",
+            "manufacturer": "samsung",
+            "brand": "Samsung",
+            "device": "x1s",
+            "product": "x1s",
+            "board": "universal2100",
+            "hardware": "exynos2100"
+        },
+        {
+            "model": "SM-G998B",
+            "manufacturer": "samsung",
+            "brand": "Samsung",
+            "device": "x3s",
+            "product": "x3s",
+            "board": "universal2100",
+            "hardware": "exynos2100"
+        },
+        {
+            "model": "POCO F5",
+            "manufacturer": "xiaomi",
+            "brand": "POCO",
+            "device": "mondrian",
+            "product": "mondrian",
+            "board": "taro",
+            "hardware": "qcom"
+        }
+    ],
+    "emulator_settings": {
+        "adb_port": 5555,
+        "rotation_interval": 3600,
+        "persist_tokens": true
+    }
+}

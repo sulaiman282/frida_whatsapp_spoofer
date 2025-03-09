@@ -1,0 +1,7 @@
+frida==16.1.4
+frida-tools>=9.2.4
+psutil==5.9.5
+pure-python-adb==0.3.0.dev0
+cryptography
+adb-shell>=0.4.0
+requests
