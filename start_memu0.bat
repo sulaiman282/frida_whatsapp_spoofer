@@ -1,6 +1,6 @@
 @echo off
 echo Starting MEmu Instance 0...
-cd /d "C:\Program Files\Microvirt\MEmu"
+cd /d "E:\Microvirt\MEmu"
 taskkill /F /IM MEmu.exe 2>nul
 taskkill /F /IM adb.exe 2>nul
 timeout /t 5
